@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — BillNudge</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+  }
+  h1 { color: #6B58B8; }
+  h2 { margin-top: 32px; }
+  .updated { color: #666; font-size: 0.9em; }
+  a { color: #6B58B8; }
+  .short { background: #F7F5FC; border-left: 4px solid #6B58B8; padding: 12px 16px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16141c; color: #e6e1ef; }
+    .updated { color: #a9a3b5; }
+    h1, a { color: #b9aef0; }
+    .short { background: #221e2c; border-left-color: #b9aef0; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy for BillNudge</h1>
+<p class="updated">Last updated: November 5, 2026</p>
+
+<p>BillNudge ("the app") is a bill reminder app developed and operated by Kelip Labs
+("we" or "us"), an independent developer and the developer named on the app's Google Play
+listing. This policy explains what data the app collects, how it's used, and your
+choices.</p>
+
+<p class="short"><strong>In short:</strong> your bills stay on your phone. When you ask
+BillNudge to read a bill or a receipt, that one document is sent through our server to
+Google's Gemini service to be read, and it isn't kept. Our server keeps only when you
+scanned, to count your free scans. No ads, no tracking, no bank login.</p>
+
+<h2>Information We Collect</h2>
+
+<p><strong>Bills and receipts you scan.</strong> When you share, choose, snap or paste a
+bill or a payment receipt and BillNudge reads it, the document (a PDF, a photo, or the
+text of a message) is sent over an encrypted connection to our server, which passes it
+to Google's Gemini API (the paid service, under which Google doesn't use what it's sent
+to improve its products) to read the biller, amount, due date, account number and
+payment details. Your phone's time zone setting (for example, "Asia/Kuala_Lumpur") is
+sent with it, so dates are read the way your country writes them. Bills and receipts
+contain personal and financial information such as your name, address, account numbers
+and amounts. Neither our server nor BillNudge keeps the document or what was read from
+it: it's processed to answer that one request, and the answer comes back to your phone.
+Our server sends Gemini only the first three pages of a PDF, and makes photos smaller
+first.</p>
+
+<p><strong>Password-protected PDFs.</strong> If a PDF has a password, you type it in the
+app and the PDF is unlocked on your phone. The password is never sent anywhere and isn't
+kept.</p>
+
+<p><strong>Things read on your phone only.</strong> The camera scanner (Google's ML Kit
+document scanner, part of Google Play services), the reading of payment QR codes on a
+bill, and finding a bill's payment web page all happen on your phone; nothing from them
+is sent to us.</p>
+
+<p><strong>Your bills.</strong> The bills you add, their payments, notes and reminders,
+and the originals and receipts BillNudge keeps for them, are stored on your phone. They
+are not sent to our server or kept in your account. If your phone's own Android backup
+to your Google account is on, the bills list (not the kept originals or receipts) is
+included in that backup, which Google keeps for you under its own policy.</p>
+
+<p><strong>Your account.</strong> BillNudge signs you in as a guest automatically, with
+an anonymous account ID and no personal information, so it can count your free scans.
+You can choose to sign in with an email address and password, or your Google account,
+to keep your free scans when you change phones. If you sign in with Google, Firebase
+receives your name, email address and profile photo as provided by Google; we use them
+only to identify your account.</p>
+
+<p><strong>Usage data for the free scans.</strong> To count free scans, our server stores
+your account ID, a randomly generated install identifier (not your phone's hardware ID),
+and the time of each scan. Scan times are deleted after 62 days. The date of the first
+scan for an account and for an install is kept, because the first 3 months have a bigger
+allowance. Our server also keeps a few totals for each day (how many bills, receipts and
+other documents were read, how many reads failed and how many were refused for having no
+free scans left); these totals contain no account IDs, install identifiers or document
+content.</p>
+
+<p><strong>Server logs.</strong> Our server's logs record what kind of document was read
+(a file or a message), which model read it, how long it took and whether it was a bill,
+never its content. Our hosting provider may keep standard request logs, such as IP
+addresses, for a short time.</p>
+
+<p><strong>Files you make.</strong> A backup file, an export (PDF or spreadsheet) or a
+"Send to family" file is made on your phone and goes only where you save or send it.
+These files contain your account numbers, so keep them to people you trust.</p>
+
+<h2>How We Use Information</h2>
+
+<ul>
+  <li>To read the bills and receipts you ask BillNudge to read</li>
+  <li>To count free scans per account and per install</li>
+  <li>To authenticate your account if you sign in</li>
+  <li>To understand, from daily totals, how much the app is used</li>
+</ul>
+
+<p>We do not sell your data, use it for advertising, or share it with third parties
+except as described here. BillNudge has no ads and no analytics or tracking tools, and
+it never connects to your bank.</p>
+
+<h2>Third-Party Services</h2>
+
+<ul>
+  <li><strong>Google Gemini API</strong> — reads the bills and receipts you scan</li>
+  <li><strong>Firebase Authentication</strong> (Google) — the guest account and
+  optional sign-in</li>
+  <li><strong>Google ML Kit</strong> — the camera scanner and QR code reading, on your
+  phone</li>
+  <li><strong>Google Fonts</strong> — the app downloads its typeface from Google's font
+  servers, which receive your device's IP address as part of that request</li>
+  <li><strong>Fly.io</strong> — hosts our server, in Singapore</li>
+</ul>
+
+<p>Google's services are subject to Google's privacy policy:
+<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.
+Fly.io's is at <a href="https://fly.io/legal/privacy-policy">https://fly.io/legal/privacy-policy</a>.</p>
+
+<h2>Data Retention and Deletion</h2>
+
+<p>Your bills stay on your phone until you delete them, clear the app's data or
+uninstall the app. Deleting a bill deletes the original and receipts kept with it.</p>
+
+<h2 id="delete-account">Deleting Your BillNudge Account</h2>
+
+<p>You can delete your account at any time from inside the app: open the menu on the
+home screen, then <em>Account</em>, then <em>Delete account</em>. After you confirm your
+password (or Google account), this permanently deletes your account and our server's
+records for it (the times of your scans and the date of your first scan). Your bills are
+on your phone, not in the account, so they stay there. The only thing kept is the
+anonymous record for that install described above (scan times, deleted after 62 days,
+and its first-scan date), which isn't linked to your account and keeps the free
+allowance from being reset. If you no longer have the app installed, you can instead
+email us at the address below to request deletion, and we'll delete your account and
+its records manually.</p>
+
+<h2>Children's Privacy</h2>
+
+<p>BillNudge is intended for people aged 18 and over. It is not directed at anyone under
+18, and we do not knowingly collect data from anyone under 18. If you believe someone
+under 18 has created an account, contact us at the address below and we'll delete it.</p>
+
+<h2>Changes to This Policy</h2>
+
+<p>We may update this policy from time to time. Changes will be posted here with an
+updated "Last updated" date.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy, or requests to delete your data? Contact Kelip Labs at
+<a href="mailto:zaid_gti@yahoo.com">zaid_gti@yahoo.com</a>.</p>
+
+</body>
+</html>
