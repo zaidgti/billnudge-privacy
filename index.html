@@ -30,7 +30,7 @@
 <body>
 
 <h1>Privacy Policy for BillNudge</h1>
-<p class="updated">Last updated: November 5, 2026</p>
+<p class="updated">Last updated: November 7, 2026</p>
 
 <p>BillNudge ("the app") is a bill reminder app developed and operated by Kelip Labs
 ("we" or "us"), an independent developer and the developer named on the app's Google Play
@@ -54,8 +54,9 @@ sent with it, so dates are read the way your country writes them. Bills and rece
 contain personal and financial information such as your name, address, account numbers
 and amounts. Neither our server nor BillNudge keeps the document or what was read from
 it: it's processed to answer that one request, and the answer comes back to your phone.
-Our server sends Gemini only the first three pages of a PDF, and makes photos smaller
-first.</p>
+BillNudge makes photos smaller and cuts a very large PDF to its first three pages on
+your phone before sending them, and our server sends Gemini only the first three pages of
+a PDF.</p>
 
 <p><strong>Password-protected PDFs.</strong> If a PDF has a password, you type it in the
 app and the PDF is unlocked on your phone. The password is never sent anywhere and isn't
@@ -81,7 +82,9 @@ only to identify your account.</p>
 
 <p><strong>Usage data for the free scans.</strong> To count free scans, our server stores
 your account ID, a randomly generated install identifier (not your phone's hardware ID),
-and the time of each scan. Scan times are deleted after 62 days. The date of the first
+and the time of each scan. For an hour after a scan it also keeps a random number the app
+gives each document, so trying again after a lost connection isn't counted twice. Scan
+times are deleted after 62 days. The date of the first
 scan for an account and for an install is kept, because the first 3 months have a bigger
 allowance. Our server also keeps a few totals for each day (how many bills, receipts and
 other documents were read, how many reads failed and how many were refused for having no
